@@ -1,9 +1,13 @@
 const contant = document.querySelector('.container');
 //judul
+document.body.style.backgroundColor = '#F0F0F0'
+document.body.style.color = 'white'
 
+
+document.body.className = ''
 const judul = document.querySelector('.tittle');
 judul.innerHTML = "DATA MAHASISWA";
-judul.className = ' text-center text-[50px] text-neutral-100 font-gayaHuruf'
+judul.className = 'text-center fw-bold mt-5 font-sans fs-1'
 
 
 //paragraf 
@@ -12,8 +16,7 @@ const p = document.createElement('p');
 const pBaru = document.createTextNode("Program Sederhana Yang Dapat Menginput Nama, Universitas, dan Jumlah SKS");
 p.appendChild(pBaru)
 header.append(p)
-p.className = "text-center text-[15px]  font-gayaHuruf text-neutral-100"
-
+p.className = 'text-center fw-border font-sans'
 
 //tombol masukkan
 const button1 = document.querySelector('.masukkan');
@@ -38,8 +41,17 @@ function refresh(){
 function authAdd(){
 
     if(mahasiswa.value=="" || university.value =="" || jumlahSKS.value=="" || npm.value ==""){
-        alert("isi dolo")
+        Swal.fire({
+            icon: 'error',
+            title:'Waduh..',
+            text:'isi data dulu'
+        })
     }else{
+        Swal.fire({
+            icon: 'success',
+            title:'OKE',
+            text:'data disimpan'
+        })
         let Npm = npm.value
         let nama = mahasiswa.value;
         let kampus = university.value;
