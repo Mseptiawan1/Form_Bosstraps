@@ -1,0 +1,76 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.567);
+    color:  black;
+
+}
+.tittle{
+    padding-left: 340px;
+    box-sizing: border-box;
+    text-decoration: underline;
+
+}
+.container{
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    
+}
+.prg{
+    padding-left: 185px;
+}
+form{
+    padding-left: 180px;
+    cursor: pointer;
+    padding-top: 50px;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+
+
+}
+input{
+    padding: 5px;
+    width: 77%;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 33, 90);
+}
+button{
+    margin-top: 20px;
+    padding: 5px;
+    outline: none;
+}
+button.cari{
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button:hover{
+    background-color: rgb(32, 207, 58);
+    color: white;
+}
+button:hover cari{
+    background-color: rgb(32, 207, 58);
+    color: white;
+
+}
+
+#cari{
+    padding: 7px;
+    
+    transition: 1s;
+    
+}
+
+
+input#cari{
+    width: 50%;
+}
